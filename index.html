@@ -2,11 +2,13 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="main.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="application.js"></script>
 		<title>37signals: Web-based collaboration apps for small business</title>
 	</head>
 	<body>
 		<header>
-		<p id="happy">Happy X-day.</p>
+		<p id="happy">Happy <span id="weekday"></span>.</p>
 		<nav>
 			<ul>
 				<li><a href="http://37signals.com/svn">Company blog</a></li>
@@ -19,32 +21,53 @@
 		</header>
 		<img id="logo-37s" src="images/logo-37s-large.png">
 		<div id="blurb">
-			<h1>Making collaboration productive and<br>enjoyable for people every day.</h1><br>
+			<h1>Making collaboration productive and enjoyable for people every day.</h1>
 			<h2>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h2>
 		</div>
+		<a href="http://basecamp.com/?source=37signals+home">
+		<div id="blurb-bc" class="hovercopy">
+			<h1><span class="blurblink">Basecamp</span> is the project management tool you wish you had on your last project.</h1>
+			<p>Are you still managing projects with email? Are you still using Excel for your to-do lists? It’s time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.</p>
+		</div>
+		</a>
+		<a href="http://highrisehq.com/?source=37signals+home">
+		<div id="blurb-hr" class="hovercopy">
+			<h1><span class="blurblink">Highrise</span> remembers the important things about people you’d normally forget.</h1>
+			<p>Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.</p>
+		</div>
+		</a>
+		<a href="http://campfirenow.com/?source=37signals+home">
+		<div id="blurb-cf" class="hovercopy">
+			<h1>From near or far, <span class="blurblink">Campfire</span> helps teams work together over the web in real-time.</h1>
+			<p>Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room. It’s game changing. We couldn’t run our own business without Campfire.</p>
+		</div>
+		</a>
 		<div id="productcontainer">
 		<a href="http://basecamp.com/?source=37signals+home">
 		<div class="products" id="bc">
 			<img id="logo-bc" src="images/logo-bc.png">
-			<span>Basecamp</span><sup>&reg;</sup>
+			<span class="productname">Basecamp</span><sup>&reg;</sup>
 			<h4>Manage Projects</h4>
 			<p>Used by millions for project management.</p>
+			<img class="arrow-left" id="arrow-bc" src="images/arrow-left.png">
 		</div>
 		</a>
 		<a href="http://highrisehq.com/?source=37signals+home">
 		<div class="products" id="hr">
 			<img id="logo-hr" src="images/logo-hr.png">
-			<span>Highrise</span><sup>&reg;</sup>
+			<span class="productname">Highrise</span><sup>&reg;</sup>
 			<h4>Manage Contacts</h4>
 			<p>Know the people you do business with.</p>
+			<img class="arrow-left" id="arrow-hr" src="images/arrow-left.png">
 		</div>
 		</a>
 		<a href="http://campfirenow.com/?source=37signals+home">
 		<div class="products" id="cf">
 			<img id="logo-cf" src="images/logo-cf.png">
-			<span>Campfire</span><sup>&trade;</sup>
+			<span class="productname">Campfire</span><sup>&trade;</sup>
 			<h4>Work in Real-Time</h4>
 			<p>Group chat rooms for your business.</p>
+			<img id="arrow-cf" src="images/arrow-right.png">
 		</div>
 		</a>
 		</div>
